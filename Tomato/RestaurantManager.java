@@ -7,6 +7,8 @@ public class RestaurantManager {
     private List<Restaurant> restaurants;
     private static RestaurantManager resManagerInstance;
 
+    private RestaurantManager() {}
+
     public static RestaurantManager getRestaurantManager() {
         // Check if the instance is null
         if (resManagerInstance == null) {
