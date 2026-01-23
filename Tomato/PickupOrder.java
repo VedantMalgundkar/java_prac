@@ -1,7 +1,7 @@
 package Tomato;
 
 public class PickupOrder extends Order {
-    private String RestaurantAddress;
+    private String restaurantAddress;
 
     @Override
     String getType() {
@@ -9,11 +9,11 @@ public class PickupOrder extends Order {
     }
 
     public void setPickUpAddress(String addr) {
-        this.RestaurantAddress = addr;
+        this.restaurantAddress = addr;
     }
 
     public String getPickUpAddress() {
-        return this.RestaurantAddress;
+        return this.restaurantAddress;
     }
     
 }

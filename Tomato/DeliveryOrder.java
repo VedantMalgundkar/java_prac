@@ -1,18 +1,22 @@
 package Tomato;
 
 public class DeliveryOrder extends Order {
-    private String DeliveryAddress;
+    private String userAddress;
+
+    DeliveryOrder() {
+        this.userAddress = ""; 
+    }
 
     @Override
     String getType() {
         return "Delivery";
     }
 
-    public void setDeliveryAddress(String addr) {
-        this.DeliveryAddress = addr;
+    public void setUserAddress(String addr) {
+        this.userAddress = addr;
     }
 
-    public String getDeliveryAddress() {
-        return this.DeliveryAddress;
+    public String getUserAddress() {
+        return this.userAddress;
     }
 }
